@@ -6,8 +6,8 @@ function rz_op = rz_operator(gamma,opt1,opt2)
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.03.16
-    %   Last updated: 2018.03.19
-    %   Version: v1.0
+    %   Last updated: 2018.03.22
+    %   Version: v1.1
     
     % Checks for the amount of input arguments and confirms the options.
     % Throws error message or returns the adecuate rotation matrix.
@@ -18,7 +18,7 @@ function rz_op = rz_operator(gamma,opt1,opt2)
     elseif nargin == 2
         switch opt1
             case 'degrees'
-                gamma = gamma*180.0/pi;
+                gamma = gamma*pi/180.0;
                 rz_op =  [cos(gamma) -sin(gamma) 0;...
                 sin(gamma) cos(gamma) 0;...
                 0 0 1];
@@ -43,7 +43,7 @@ function rz_op = rz_operator(gamma,opt1,opt2)
             otherwise
                 error('Option not recognized.');
         end
-        gamma = gamma*180.0/pi;
+        gamma = gamma*pi/180.0;
         rz_op = [cos(gamma) -sin(gamma) 0 0;...
                         sin(gamma) cos(gamma) 0 0;...
                         0 0 1 0;...

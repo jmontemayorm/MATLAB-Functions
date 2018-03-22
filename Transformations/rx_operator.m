@@ -6,8 +6,8 @@ function rx_op = rx_operator(alpha,opt1,opt2)
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.03.16
-    %   Last updated: 2018.03.19
-    %   Version: v1.0
+    %   Last updated: 2018.03.22
+    %   Version: v1.1
     
     % Checks for the amount of input arguments and confirms the options.
     % Throws error message or returns the adecuate rotation matrix.
@@ -18,7 +18,7 @@ function rx_op = rx_operator(alpha,opt1,opt2)
     elseif nargin == 2
         switch opt1
             case 'degrees'
-                alpha = alpha*180.0/pi;
+                alpha = alpha*pi/180.0;
                 rx_op =  [1 0 0;...
                 0 cos(alpha) -sin(alpha);...
                 0 sin(alpha) cos(alpha)];
@@ -43,7 +43,7 @@ function rx_op = rx_operator(alpha,opt1,opt2)
             otherwise
                 error('Option not recognized.');
         end
-        alpha = alpha*180.0/pi;
+        alpha = alpha*pi/180.0;
         rx_op =  [1 0 0 0;...
                 0 cos(alpha) -sin(alpha) 0;...
                 0 sin(alpha) cos(alpha) 0;...

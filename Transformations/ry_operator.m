@@ -6,8 +6,8 @@ function ry_op = ry_operator(beta,opt1,opt2)
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.03.16
-    %   Last updated: 2018.03.19
-    %   Version: v1.0
+    %   Last updated: 2018.03.22
+    %   Version: v1.1
     
     % Checks for the amount of input arguments and confirms the options.
     % Throws error message or returns the adecuate rotation matrix.
@@ -18,7 +18,7 @@ function ry_op = ry_operator(beta,opt1,opt2)
     elseif nargin == 2
         switch opt1
             case 'degrees'
-                beta = beta*180.0/pi;
+                beta = beta*pi/180.0;
                 ry_op =  [cos(beta) 0 sin(beta);...
                 0 1 0;...
                 -sin(beta) 0 cos(beta)];
@@ -43,7 +43,7 @@ function ry_op = ry_operator(beta,opt1,opt2)
             otherwise
                 error('Option not recognized.');
         end
-        beta = beta*180.0/pi;
+        beta = beta*pi/180.0;
         ry_op =  [cos(beta) 0 sin(beta) 0;...
                 0 1 0 0;...
                 -sin(beta) 0 cos(beta) 0;...
