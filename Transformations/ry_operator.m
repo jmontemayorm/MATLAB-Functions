@@ -1,14 +1,14 @@
 function ry_op = ry_operator(beta,opt1,opt2)
-    %RY_OPERATOR Creates a rotation operator in 3D around the y axis
+    %RY_OPERATOR Creates a rotation operator in 3D around the y-axis
     %   Rotates beta radians, unless specified by the options to rotate
     %   in degrees. Can also be specified to return an extended operator
     %   matrix (4-by-4) so it's able to be combined with traslations.
     %
     %   RY_OPERATOR(beta) returns the 3D rotation matrix of beta radians
-    %   around the y axis.
+    %   around the y-axis.
     %
     %   RY_OPERATOR(beta,opt1) and RY_OPERATOR(beta,opt1,opt2) return the
-    %   3D rotation matrix around the y axis, where opt1 and opt2 can be
+    %   3D rotation matrix around the y-axis, where opt1 and opt2 can be
     %   either 'degrees' or 'extended'. If 'degrees' is one of the options
     %   the rotation is performed in degrees. If 'extended' is one of the
     %   options, the result is a 4-by-4 affine matrix.
@@ -58,7 +58,7 @@ function ry_op = ry_operator(beta,opt1,opt2)
                 -sin(beta) 0 cos(beta) 0;...
                 0 0 0 1];
     else
-        error('Not enough input arguments.');
+        error('The amount of input arguments does not match this function.');
     end
     
 end

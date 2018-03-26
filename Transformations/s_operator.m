@@ -47,6 +47,6 @@ function s_op = s_operator(s,opt1)
             error('Option not recognized.');
         end
     else
-        error('The number of inputs does not match this function.');
+        error('The number of input arguments does not match this function.');
     end
 end

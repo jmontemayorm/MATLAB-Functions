@@ -1,14 +1,14 @@
 function rz_op = rz_operator(gamma,opt1,opt2)
-    %RZ_OPERATOR Creates a rotation operator in 3D around the z axis
+    %RZ_OPERATOR Creates a rotation operator in 3D around the z-axis
     %   Rotates gamma radians, unless specified by the options to rotate
     %   in degrees. Can also be specified to return an extended operator
     %   matrix (4-by-4) so it's able to be combined with traslations.
     %
     %   RZ_OPERATOR(gamma) returns the 3D rotation matrix of gamma radians
-    %   around the z axis.
+    %   around the z-axis.
     %
     %   RZ_OPERATOR(gamma,opt1) and RZ_OPERATOR(gamma,opt1,opt2) return the
-    %   3D rotation matrix around the z axis, where opt1 and opt2 can be
+    %   3D rotation matrix around the z-axis, where opt1 and opt2 can be
     %   either 'degrees' or 'extended'. If 'degrees' is one of the options
     %   the rotation is performed in degrees. If 'extended' is one of the
     %   options, the result is a 4-by-4 affine matrix.

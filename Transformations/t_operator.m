@@ -16,7 +16,7 @@ function t_op = t_operator(v)
     % Checks for the amount of input arguments..
     % Throws error message or returns the appropriate translation matrix.
     if nargin ~= 1
-        error('The number of inputs does not match this function.')
+        error('The number of input arguments does not match this function.')
     else
         t_op = [1 0 0 v(1);...
             0 1 0 v(2);...
