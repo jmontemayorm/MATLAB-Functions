@@ -6,11 +6,11 @@ function rx_op = rx_operator(alpha,opt1,opt2)
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.03.16
-    %   Last updated: 2018.03.22
+    %   Last updated: 2018.03.26
     %   Version: v1.1
     
     % Checks for the amount of input arguments and confirms the options.
-    % Throws error message or returns the adecuate rotation matrix.
+    % Throws error message or returns the appropriate rotation matrix.
     if nargin == 1
         rx_op =  [1 0 0;...
             0 cos(alpha) -sin(alpha);...

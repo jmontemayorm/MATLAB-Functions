@@ -8,11 +8,11 @@ function s_op = s_operator(s,opt1)
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.03.16
-    %   Last updated: 2018.03.19
+    %   Last updated: 2018.03.26
     %   Version: v1.0
     
     % Checks for the amount of input arguments..
-    % Throws error message or returns the adecuate translation matrix.
+    % Throws error message or returns the appropriate translation matrix.
     if nargin == 1
         if numel(s) == 1
             s_op = [s 0 0;...

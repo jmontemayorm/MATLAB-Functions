@@ -6,11 +6,11 @@ function t_op = t_operator(v)
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.03.16
-    %   Last updated: 2018.03.19
+    %   Last updated: 2018.03.26
     %   Version: v1.0
     
     % Checks for the amount of input arguments..
-    % Throws error message or returns the adecuate translation matrix.
+    % Throws error message or returns the appropriate translation matrix.
     if nargin ~= 1
         error('The number of inputs does not match this function.')
     else
