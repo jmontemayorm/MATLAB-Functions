@@ -5,11 +5,18 @@ function s_op = s_operator(s,opt1)
     %   as the input for the x, y and z ratios. If the input is not a
     %   vector all the ratios are taken as s. The argument opt1
     %   specifies if the matrix should be extended.
+    %
+    %   S_OPERATOR(s) returns the 3D scaling matrix. If s is a vector
+    %   (length must be 3), it scales s(1) in x, s(2) in y and s(3) in z.
+    %   If s is not a vector it scales equally in all directions.
+    %
+    %   S_OPERATOR(s,opt1) where opt1 is 'extended' returns the affine
+    %   (4-by-4) of the 3D scaling matrix returned by S_OPERATOR(s).
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.03.16
     %   Last updated: 2018.03.26
-    %   Version: v1.0
+    %   Version: v1.1
     
     % Checks for the amount of input arguments..
     % Throws error message or returns the appropriate translation matrix.

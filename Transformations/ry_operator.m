@@ -3,11 +3,20 @@ function ry_op = ry_operator(beta,opt1,opt2)
     %   Rotates beta radians, unless specified by the options to rotate
     %   in degrees. Can also be specified to return an extended operator
     %   matrix (4-by-4) so it's able to be combined with traslations.
+    %
+    %   RY_OPERATOR(beta) returns the 3D rotation matrix of beta radians
+    %   around the y axis.
+    %
+    %   RY_OPERATOR(beta,opt1) and RY_OPERATOR(beta,opt1,opt2) return the
+    %   3D rotation matrix around the y axis, where opt1 and opt2 can be
+    %   either 'degrees' or 'extended'. If 'degrees' is one of the options
+    %   the rotation is performed in degrees. If 'extended' is one of the
+    %   options, the result is a 4-by-4 affine matrix.
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.03.16
     %   Last updated: 2018.03.26
-    %   Version: v1.1
+    %   Version: v1.2
     
     % Checks for the amount of input arguments and confirms the options.
     % Throws error message or returns the appropriate rotation matrix.
