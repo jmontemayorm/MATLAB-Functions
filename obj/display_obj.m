@@ -27,8 +27,8 @@ function varargout = display_obj(ARG1,ARG2,ARG3)
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.03.19
-    %   Last updated: 2018.04.19
-    %   Version: v2.0
+    %   Last updated: 2018.04.20
+    %   Version: v2.1
     
     % Checks for the amount of input arguments.
     if nargin == 1
@@ -62,6 +62,7 @@ function varargout = display_obj(ARG1,ARG2,ARG3)
             [varargout{1},varargout{2}] = open_obj(ARG1);
         
             figure(ARG2)
+            hold on
             varargout{3} = patch('Faces',varargout{2},'Vertices',varargout{1});
             set(varargout{3},'FaceColor',[0.5, 0.6, 0.8],'EdgeColor','Black')
             set(varargout{3},'EdgeAlpha',0.2)
@@ -77,6 +78,7 @@ function varargout = display_obj(ARG1,ARG2,ARG3)
         faces = ARG2;
         
         figure(ARG3)
+        hold on
         varargout{1} = patch('Faces',faces,'Vertices',vertices);
         set(varargout{1},'FaceColor',[0.5, 0.6, 0.8],'EdgeColor','Black')
         set(varargout{1},'EdgeAlpha',0.2)
