@@ -30,7 +30,7 @@ function varargout = display_obj(ARG1,ARG2,ARG3)
     %   Last updated: 2018.04.20
     %   Version: v2.1
     
-    % Checks for the amount of input arguments.
+    % Checks for the amount of input arguments
     if nargin == 1
         % Only one argument provided, open .obj file and display
         
