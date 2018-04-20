@@ -17,7 +17,7 @@ function update_points(SCATTER3_H,DATAPOINTS)
     %   Last updated: 2018.04.20
     %   Version: v1.0
     
-     % Checks for the amount of input arguments
+    % Checks for the amount of input arguments
     if nargin == 2
         SCATTER3_H.XData = DATAPOINTS(1,:);
         SCATTER3_H.YData = DATAPOINTS(2,:);
