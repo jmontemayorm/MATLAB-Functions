@@ -7,6 +7,10 @@ function update_points(SCATTER3_H,DATAPOINTS)
     %   UPDATE_POINTS(SCATTER3_H,DATAPOINTS) updates the x, y, and z
     %   components of the data being displayed by the scatter3 handler.
     %   This can be used after the data has been transformed in space.
+    %
+    %   Computer Vision System Toolbox's point cloud functions not used for
+    %   lack of support of a handler to update manipulated data while
+    %   keeping other objects in the same figure.
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.04.20

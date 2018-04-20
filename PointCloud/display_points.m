@@ -13,6 +13,10 @@ function varargout = display_points(DATAPOINTS,FIGURE)
     %   DISPLAY_POINTS(DATAPOINTS,FIGURE) returns only the scatter3 handler
     %   and takes as second input the desired figure number or figure
     %   handler.
+    %
+    %   Computer Vision System Toolbox's point cloud functions not used for
+    %   lack of support of a handler to update manipulated data while
+    %   keeping other objects in the same figure.
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.04.20
@@ -31,7 +35,7 @@ function varargout = display_points(DATAPOINTS,FIGURE)
     
     % Displays the data and creates a handle
     varargout{1} = ...
-        scatter3(DATAPOINTS(1,:),DATAPOINTS(2,:),DATAPOINTS(3,:));
+        scatter3(DATAPOINTS(1,:),DATAPOINTS(2,:),DATAPOINTS(3,:),'.');
     axis equal
     grid on
     xlabel 'x'
