@@ -50,12 +50,12 @@ function save_obj(FILEPATH,FILENAME,VERTICES,FACES,HEADER)
             if nargin == 5
                 fprintf(fID,['# ' HEADER '\n']);
             end
-            fprintf(fID,'# Created with MATLAB\n\n');
+            fprintf(fID,'# Created with MATLAB\n');
             
             % Write the vertcies
             fprintf(fID,'# List of geometric vertices, with (x,y,z) coordinates:\n');
             fprintf(fID,'v %f %f %f\n',VERTICES);
-            fprintf(fID,'# %i vertices\n\n',size(VERTICES,1));
+            fprintf(fID,'# %i vertices\n',size(VERTICES,1));
             
             % Write the faces
             fprintf(fID,'# List of triangles:\n');

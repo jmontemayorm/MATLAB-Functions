@@ -23,7 +23,7 @@ function varargout = display_obj(ARG1,ARG2,ARG3)
     %   the vertices, faces, and figure hanlde (or number), respectively,
     %   and returns as only output the patch handle.
     
-    %   Dependencies: open_obj
+    %   Dependencies: open_obj.m
     
     %   Author: Javier Montemayor Mancias
     %   Created on: 2018.03.19

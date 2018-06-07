@@ -35,7 +35,7 @@ function varargout = display_points(DATAPOINTS,FIGURE)
     
     % Displays the data and creates a handle
     varargout{1} = ...
-        scatter3(DATAPOINTS(1,:),DATAPOINTS(2,:),DATAPOINTS(3,:),'.');
+        scatter3(DATAPOINTS(1,:),DATAPOINTS(2,:),DATAPOINTS(3,:),'.','MarkerEdgeColor',[0,0.4470,0.7410]);
     axis equal
     grid on
     xlabel 'x'
